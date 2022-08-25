@@ -44,7 +44,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 4rem 8rem;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .hero-container {
@@ -75,8 +75,8 @@ body {
 
 .hero-img {
   width: 520px;
+  min-width: 260px;
   height: 230px;
-  overflow-x: visible;
 }
 
 .info-section {
@@ -124,12 +124,26 @@ body {
   align-items: center;
 }
 
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 8rem;
+}
+
+.quote-author {
+  display: flex;
+  justify-content: right;
+  color: #1F2937;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
 .quote-text {
   color: #1F2937;
   font-size: 36px;
   font-weight: lighter;
   font-style: italic;
-  margin: 8rem 8rem 0 8rem;
   max-width: 777px;
 }
 
@@ -139,13 +153,6 @@ body {
 
 .quote-text::after {
   content: close-quote;
-}
-
-.quote-author {
-  color: #1F2937;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 4rem 0;
 }
 
 .action-section {
