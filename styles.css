@@ -4,15 +4,15 @@
 
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #1F2937;
-  color: #F9FAF8;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  margin: 0 8rem;
+  background-color: #1F2937;
+  color: #F9FAF8;
+  
 }
 
 .header {
@@ -21,6 +21,7 @@ body {
   align-items: center;
   padding: 0.5rem;
   margin-bottom: 4rem;
+  margin: 0 8rem;
 }
 
 .logo {
@@ -36,11 +37,13 @@ body {
 
 .links {
   text-decoration: none;
+  color: #F9FAF8;
 }
 
 .hero-section {
   display: flex;
   justify-content: space-between;
+  margin: 4rem 8rem;
 }
 
 .hero-header {
@@ -55,10 +58,11 @@ body {
 }
 
 .hero-button {
-  padding: 0.2rem 1.2rem;
+  color: #F9FAF8;
   background-color: #3882F6;
   border: 2px solid #3882F6;
   border-radius: 0.3rem;
+  padding: 0.2rem 1.2rem;
   font-size: 12px;
   font-weight: bold;
 }
@@ -66,5 +70,42 @@ body {
 .hero-img {
   width: 520px;
   height: 230px;
+}
+
+.info-section {
+  background-color: #F9FAF8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-header {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1F2937;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 8rem;
+}
+
+.info-text {
+  text-align: center;
+  color:#1F2937;
+  width: 150px;
+}
+
+.info-img {
+  width: 150px;
+  height: 150px;
   border: 2px solid #3882F6;
+  border-radius: 0.5rem;
 }
