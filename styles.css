@@ -44,6 +44,13 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 4rem 8rem;
+  gap: 4rem;
+}
+
+.hero-container {
+  flex-shrink: 1;
+  min-width: 500px;
+  max-width: 500px;
 }
 
 .hero-header {
@@ -53,7 +60,6 @@ body {
 
 .hero-text {
   font-size: 18px;
-  width: 450px;
   margin: 0.7rem 0rem;
 }
 
@@ -70,6 +76,7 @@ body {
 .hero-img {
   width: 520px;
   height: 230px;
+  overflow-x: visible;
 }
 
 .info-section {
@@ -84,8 +91,7 @@ body {
   font-size: 36px;
   font-weight: bold;
   color: #1F2937;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin: 4rem 0;
 }
 
 .info-container {
@@ -97,17 +103,17 @@ body {
   margin-bottom: 8rem;
 }
 
+.info-img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #3882F6;
+  border-radius: 0.5rem;
+}
+
 .info-text {
   text-align: center;
   color:#1F2937;
-  width: 150px;
-}
-
-.info-img {
-  width: 150px;
-  height: 150px;
-  border: 2px solid #3882F6;
-  border-radius: 0.5rem;
+  width: 200px;
 }
 
 .quote-section {
@@ -124,6 +130,15 @@ body {
   font-weight: lighter;
   font-style: italic;
   margin: 8rem 8rem 0 8rem;
+  max-width: 777px;
+}
+
+.quote-text::before {
+  content: open-quote;
+}
+
+.quote-text::after {
+  content: close-quote;
 }
 
 .quote-author {
@@ -146,7 +161,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 2px solid #3882F6;
-  border-radius: 0.25rem;
+  border-radius: 0.3rem;
   background-color: #3882F6;
   padding: 4rem 8rem;
   margin: 8rem 0;
